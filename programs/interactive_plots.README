@@ -1,0 +1,3 @@
+cd jupyter-matplotlib/js && npm run watch
+
+https://github.com/matplotlib/jupyter-matplotlib
