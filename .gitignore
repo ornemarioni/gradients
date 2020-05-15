@@ -101,5 +101,6 @@ ENV/
 .mypy_cache/
 _imagenes/
 _data/
+_simulations/
 *.png
 *.dat
