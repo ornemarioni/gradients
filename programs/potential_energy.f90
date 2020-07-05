@@ -28,7 +28,7 @@ MODULE energia
        p(i) = 0.
     END DO
     
-    CALL OMP_SET_NUM_THREADS(48)
+!!!!!CALL OMP_SET_NUM_THREADS(48)
 !$OMP PARALLEL DEFAULT(NONE) &
 !$OMP SHARED (n,x,y,z,eps,m,p) &
 !$OMP PRIVATE(i,j,dx,dy,dz,dist,aux)
