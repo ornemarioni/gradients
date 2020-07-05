@@ -1,17 +1,14 @@
-MODULE energia
-    IMPLICIT NONE
-    CONTAINS
-    
-    
-!Calcula la energia potencial de cada una de las particulas
-!eps = long de softening [kpc]
-!m = masas [Msol]
-!x,y,z = posiciones [kpc]
-!p = potencial (salida) [Msol (km/s)^2]
+!!Calcula la energia potencial de cada una de las particulas
+!!eps = long de softening [kpc]
+!!m = masas [Msol]
+!!x,y,z = posiciones [kpc]
+!!p = potencial (salida) [Msol (km/s)^2]
 
-    SUBROUTINE epot(eps,m,x,y,z,n,p)
+SUBROUTINE epot(eps,m,x,y,z,n,p)
     
     USE OMP_LIB
+    
+    IMPLICIT NONE  
     
     INTEGER, INTENT (IN)    :: n
     REAL(8), INTENT (IN)    :: x(n), y(n), z(n), m(n), eps
@@ -50,5 +47,4 @@ MODULE energia
 !$OMP END DO
 !$OMP END PARALLEL
 
-    END SUBROUTINE
-END MODULE
+END SUBROUTINE
