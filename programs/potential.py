@@ -8,13 +8,13 @@ ystr = STR[:,2]
 zstr = STR[:,3]
 mstr = STR[:,4]
 
-GAS = np.loadtxt('gas.dat')
+GAS = np.loadtxt(path+'gas.dat')
 xgas = GAS[:,1]
 ygas = GAS[:,2]
 zgas = GAS[:,3]
 mgas = GAS[:,4]
 
-DRK = np.loadtxt('drk.dat')
+DRK = np.loadtxt(path+'drk.dat')
 xdrk = DRK[:,1]
 ydrk = DRK[:,2]
 zdrk = DRK[:,3]
