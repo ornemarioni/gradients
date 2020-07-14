@@ -104,3 +104,5 @@ _data/
 _simulations/
 *.png
 *.dat
+*.so
+*.o
