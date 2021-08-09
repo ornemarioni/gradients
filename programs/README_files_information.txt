@@ -2,6 +2,7 @@ FILES INFORMATION
 
 1 - read_HESTIA_test.ipynb:
 	> We have snapshots directory
+    > Vemos que hay dentro de los snapshots y cómo leerlos.
 	> We read the z=0 snapshot and concatenate different outputs to get position of the particles
 	> 
 	
