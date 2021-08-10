@@ -12,20 +12,26 @@ FILES INFORMATION
     > Miro cuales de esos 100 no tienen particulas low o int-res.
     > Grafico los subhalos que no tienen particulas low/int-res **subhalos.png**
     
-	
 2 - virial_mass.ipynb
-    > We compute the virial mass of the halos.
+    > Leo los archivos de los subhalos, saco masas, posiciones y radios.
+    > Calculo masa y radio virial de los 8 halos mas masivos que no tienen particulas low/int-res. **Mvir_Rvir.dat**
     
 3 - read_HESTIA.ipynb:
 	> We have snapshots directory
     > Tenemos la informacion de los grupos FoF y los subhalos dentro de cada grupo.
     > Sacamos los 10 halos mas masivos con sus posiciones.
 	> We read the z=0 snapshot and concatenate different outputs to get position of the particles
-	> We save the ten most massive halos in other outputs.
-	> We plot the most massive galaxy with sphviewer.
+	> We save the 8 most massive halos in other outputs (sin particulas low/int-res).
+	> We plot the 3 most massive galaxy with sphviewer.
+    > Grafico las estrellas de los 8 halos.
+    > Miro que hay dentro de cada archivo de subhalo guardado.
 	
 4 - density_plots.ipynb:
 	> Plots of mass density in stars, gas and dark matter.
-    
+    > Tengo los minimos y maximos de densidad para cada plot.
+    > Guardo los plots en **'../_imagenes/mass_density/subhalo*.png'**
+    > Hago los plots de densidad estelar separando en edades de las estrellas 
+    > Guardo los plots en **'../_imagenes/ages_stars/starages_sh_*.png'**
+    > Hago el plot **'../_imagenes/ages_stars/subhalo_000.pdf'** para el boletin de la AAA.
 
 	
