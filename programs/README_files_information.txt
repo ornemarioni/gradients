@@ -33,5 +33,11 @@ FILES INFORMATION
     > Hago los plots de densidad estelar separando en edades de las estrellas 
     > Guardo los plots en **'../_imagenes/ages_stars/starages_sh_*.png'**
     > Hago el plot **'../_imagenes/ages_stars/subhalo_000.pdf'** para el boletin de la AAA.
+    
+5 - metallicity_gradients.ipynb:
+    > Leo los archivos de los subhalos que guarde
+    > Veo que porcentage de partículas tengo con Formation Time (FT) menor que cero (estas son celdas de gas o algo asi, ver documentacion Illustris)
+    > Hago los plots de distribucion de edades y metalicidades **'../_imagenes/metallicity_ages/Rz_met_s*.png'**
+    
 
 	
