@@ -36,8 +36,34 @@ FILES INFORMATION
     
 5 - metallicity_gradients.ipynb:
     > Leo los archivos de los subhalos que guarde
-    > Veo que porcentage de partículas tengo con Formation Time (FT) menor que cero (estas son celdas de gas o algo asi, ver documentacion Illustris)
+    > Veo que porcentage de partículas tengo con Formation Time (FT) < 0 (ver documentacion Illustris)
+    > Veo cuantas particulas tienen metalicidades negativas.
     > Hago los plots de distribucion de edades y metalicidades **'../_imagenes/metallicity_ages/Rz_met_s*.png'**
+    > Veo como se distribuyen radialmente las metalicidades en bines de edad
+    > Hago histogramas de metalicidades y edades
+    > Corroboro que los tiempos que calculo me den igual a los calculados con un paquete de astropy (a --> Gyr)
     
+  
+6 - ages_distribution.ipynb:
+    > Veo la distribucion radial de las edades en el subhalo mas masivo en bines de edad
+    > Guardo los archivos **'../_imagenes/test_ages/subh000/sh_000_age_*.png'**
+    > Se puede hacer con los otros halos, esta hecho solo con el primero
+    
+7 - metalicidad_perfiles.ipynb
+    > Calculo los perfiles radiales de metalicidad en bines de edad
+    > Guardo los archivos **'../_imagenes/met_perfil/met_subh_*.png'**
 
-	
+8 - z50_perfiles.ipynb
+    > Calculo los perfiles de z50 (Half-mass scale height) para todos los halos
+    > Guardo el archivo **'../_imagenes/z50_perfil.png'**
+    > Calculo los perfiles de z50 (Half-mass scale height) para todos los halos en bines de edad
+    > Guardo los archivos **'../_imagenes/z50_perfil/z50_subh_*.png'**
+    
+9 - surface_density.ipynb
+    > Calculo los perfiles radiales de densidad superficial (de masa) para todos los halos
+    > Guardo el archivo **'../_imagenes/surf_density.png'**
+    > Calculo los perfiles de densidad superficial en bines de masa
+    > Guardo los archivos **'../_imagenes/surf_density/sd_subh_*.png'**
+    
+10 - circular_velocity.ipynb
+    > 
