@@ -66,4 +66,13 @@ FILES INFORMATION
     > Guardo los archivos **'../_imagenes/surf_density/sd_subh_*.png'**
     
 10 - circular_velocity.ipynb
-    > 
+    > Calculo las curvas de veloc circular para los 8 halos mas masivos
+    > Guardo los archivos: (solo el 1% de las particulas)
+        - '../_data/velocity/sh*_Vtot.dat'
+        - '../_data/velocity/sh*_Vstr.dat'
+        - '../_data/velocity/sh*_Vgas.dat'
+        - '../_data/velocity/sh*_Vdrk.dat'
+    > Grafico las curvas y las guardo: '../_imagenes/velocities/Vcirc_sh_*.png'
+    > Verifico que se lean bien los archivos
+
+11 - SFR.ipynb
