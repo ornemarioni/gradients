@@ -1,5 +1,8 @@
 FILES INFORMATION
 
+DOCUMENTACION AREPO : https://arepo-code.org/wp-content/userguide/snapshotformat.html
+DOCUMENTACION ILLUSTRIS: https://www.tng-project.org/data/docs/specifications/
+
 1 - read_HESTIA_test.ipynb:
 	> We have snapshots directory
     > Vemos que hay dentro de los snapshots y cómo leerlos.
@@ -43,7 +46,6 @@ FILES INFORMATION
     > Hago histogramas de metalicidades y edades
     > Corroboro que los tiempos que calculo me den igual a los calculados con un paquete de astropy (a --> Gyr)
     
-  
 6 - ages_distribution.ipynb:
     > Veo la distribucion radial de las edades en el subhalo mas masivo en bines de edad
     > Guardo los archivos **'../_imagenes/test_ages/subh000/sh_000_age_*.png'**
@@ -83,3 +85,6 @@ FILES INFORMATION
     > Grafico la curva de abundance matching
     > Guardo la imagen: **'../_imagenes/Mvir_vs_Mgal.png'**
     > Me fijo cuanta es la proporcion de masa que aportan las particulas con SFT<0
+    
+13 - merger_tree.ipynb
+    > 
