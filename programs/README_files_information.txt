@@ -11,6 +11,7 @@ DOCUMENTACION ILLUSTRIS: https://www.tng-project.org/data/docs/specifications/
     > Veo donde estan posicionados los halos y grupos mas masivos
     > Grafico los 3 halos mas masivos (los roto respecto del momento ang) -- Aca todavia no miro si hay particulas low-res en los halos.
     > Veo la masa de las diferentes particulas
+     - Esto de aca ya no es necesario porque miro los datos de Amiga con fMhires
     > Saco los 100 subhalos mas masivos con las masas y cant de particulas de cada tipo: **subhalos.dat**
     > Miro cuales de esos 100 no tienen particulas low o int-res.
     > Grafico los subhalos que no tienen particulas low/int-res **subhalos.png**
@@ -20,13 +21,15 @@ DOCUMENTACION ILLUSTRIS: https://www.tng-project.org/data/docs/specifications/
     > Calculo masa y radio virial de los 8 halos mas masivos que no tienen particulas low/int-res. **Mvir_Rvir.dat**
     
 3 - read_HESTIA.ipynb:
-	> We have snapshots directory
-    > Tenemos la informacion de los grupos FoF y los subhalos dentro de cada grupo.
-    > Sacamos los 10 halos mas masivos con sus posiciones.
+	> Vemos la info de los halos adentro de los archivos de Amiga *.AHF_halos
+    > Extraemos los datos necesarios del archivo (ID, Mvir, Rvir, Pos, fMhires)
+    > Usando fMhires sacamos los halos que contengan particulas low-res
+    > Nos quedamos los los 15 halos mas masivos.
+    > Guardo los datos de estos 15 halos mas masivos **'../_data/my_halos.dat'**
 	> We read the z=0 snapshot and concatenate different outputs to get position of the particles
-	> We save the 8 most massive halos in other outputs (sin particulas low/int-res).
+	> We save the 15 most massive halos in other outputs (sin particulas low/int-res).
 	> We plot the 3 most massive galaxy with sphviewer.
-    > Grafico las estrellas de los 8 halos.
+    > Grafico las estrellas de los 15 halos.
     > Miro que hay dentro de cada archivo de subhalo guardado.
 	
 4 - density_plots.ipynb:
