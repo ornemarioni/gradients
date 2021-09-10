@@ -51,7 +51,7 @@ DOCUMENTACION ILLUSTRIS: https://www.tng-project.org/data/docs/specifications/
     
 6 - ages_distribution.ipynb:
     > Veo la distribucion radial de las edades en el subhalo mas masivo en bines de edad
-    > Guardo los archivos **'../_imagenes/test_ages/subh000/sh_000_age_*.png'**
+    > Guardo los archivos **'../_imagenes/test_ages/127*002/sh_*_age_*.png'**
     > Se puede hacer con los otros halos, esta hecho solo con el primero
     
 7 - metalicidad_perfiles.ipynb
