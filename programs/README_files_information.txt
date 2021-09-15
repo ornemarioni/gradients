@@ -36,8 +36,6 @@ DOCUMENTACION ILLUSTRIS: https://www.tng-project.org/data/docs/specifications/
 	> Plots of mass density in stars, gas and dark matter.
     > Tengo los minimos y maximos de densidad para cada plot.
     > Guardo los plots en **'../_imagenes/mass_density/subhalo*.png'**
-    > Hago los plots de densidad estelar separando en edades de las estrellas 
-    > Guardo los plots en **'../_imagenes/ages_stars/starages_sh_*.png'**
     > Hago el plot **'../_imagenes/ages_stars/subhalo_000.pdf'** para el boletin de la AAA.
     
 5 - metallicity_gradients.ipynb:
@@ -90,4 +88,15 @@ DOCUMENTACION ILLUSTRIS: https://www.tng-project.org/data/docs/specifications/
     > Me fijo cuanta es la proporcion de masa que aportan las particulas con SFT<0
     
 13 - merger_tree.ipynb
-    > 
+    > Guardo los archivos para los 15 subhalos mas masivos a z=0 para todos los snapshots.
+        - **'../_simulations/snap_*/subhalo_*.h5py'**
+        - **'../simulations/snapshot_output.txt'** --> tiene la salida del guardado de archivos
+    > Grafico uno de los halos para ver como quedo.
+    
+14 - age_star_gas_particles.ipynb
+    > Hago los plots de densidad estelar separando en edades de las estrellas 
+    > Guardo los plots en **'../_imagenes/ages_stars/starages_sh_*.png'**
+
+15 - time.ipynb
+    > Guardo el archivo **'../_data/time.dat'** 
+        - #snap    a    z    time
