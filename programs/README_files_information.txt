@@ -60,7 +60,11 @@ DOCUMENTACION ILLUSTRIS: https://www.tng-project.org/data/docs/specifications/
     > Calculo los perfiles de z50 (Half-mass scale height) para todos los halos
     > Guardo el archivo **'../_imagenes/z50_perfil.png'**
     > Calculo los perfiles de z50 (Half-mass scale height) para todos los halos en bines de edad
+      (entre 4 y 10Gyr)
     > Guardo los archivos **'../_imagenes/z50_perfil/z50_subh_*.png'**
+    > Calculo los perfiles de z50 (Half-mass scale height) para todos los halos en bines de edad
+      (entre 0 y 14Gyr)
+    > Guardo los archivos **'../_imagenes/z50_perfil/all_ages/z50_subh_*.png'**
     
 9 - surface_density.ipynb
     > Calculo los perfiles radiales de densidad superficial (de masa) para todos los halos
@@ -100,3 +104,6 @@ DOCUMENTACION ILLUSTRIS: https://www.tng-project.org/data/docs/specifications/
 15 - time.ipynb
     > Guardo el archivo **'../_data/time.dat'** 
         - #snap    a    z    time
+        
+
+      
