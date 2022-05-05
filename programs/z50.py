@@ -19,9 +19,15 @@ def HMSH(R,z,m,nbin):
         zsort = z[mask][zorder]
         msort = m[mask][zorder]
         
+        if len(msort) == 0:
+            continue
+        
         mtot   = np.cumsum(msort)
         m_mean, = np.where(mtot < mtot[-1]/2.)
         
+        if len(m_mean) == 0:
+            continue
+            
         z50[i] = zsort[m_mean][-1]
         
     return med, z50

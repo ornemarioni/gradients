@@ -33,7 +33,7 @@ DOCUMENTACION ILLUSTRIS: https://www.tng-project.org/data/docs/specifications/
     > Miro que hay dentro de cada archivo de subhalo guardado.
 	
 4 - density_plots.ipynb:
-	> Plots of mass density in stars, gas and dark matter.
+	> Plots of mass density in stars, gas and dark matter. (z=0)
     > Tengo los minimos y maximos de densidad para cada plot.
     > Guardo los plots en **'../_imagenes/mass_density/subhalo*.png'**
     > Hago el plot **'../_imagenes/ages_stars/subhalo_000.pdf'** para el boletin de la AAA.
@@ -100,10 +100,16 @@ DOCUMENTACION ILLUSTRIS: https://www.tng-project.org/data/docs/specifications/
 14 - age_star_gas_particles.ipynb
     > Hago los plots de densidad estelar separando en edades de las estrellas 
     > Guardo los plots en **'../_imagenes/ages_stars/starages_sh_*.png'**
+    > Hice un nuevo bineado (reemplace 8 por 7Gyr en realidad)
+    > Guardo los plots en **'../_imagenes/ages_stars/new_bins/starages_sh_*.png'**
 
 15 - time.ipynb
     > Guardo el archivo **'../_data/time.dat'** 
         - #snap    a    z    time
         
+   - gas_particles.ipynb
 
-      
+   - circularidad.ipynb
+    > archivo viejo
+    
+    
