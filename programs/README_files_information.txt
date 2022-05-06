@@ -102,6 +102,10 @@ DOCUMENTACION ILLUSTRIS: https://www.tng-project.org/data/docs/specifications/
     > Guardo los plots en **'../_imagenes/ages_stars/starages_sh_*.png'**
     > Hice un nuevo bineado (reemplace 8 por 7Gyr en realidad)
     > Guardo los plots en **'../_imagenes/ages_stars/new_bins/starages_sh_*.png'**
+    > Veo que snapshots caen dentro de cada bin de edad
+    > Saco los ID de las particulas que nacieron en cada bin de edades
+    > Guardo '../_data/ID_stars_formtime.dat' los ID de las part en cada bin de edad
+    > Guardo '../_data/num_stars_formtime.dat' los numeros de ctas particulas nacieron en ese bin de edad.
 
 15 - time.ipynb
     > Guardo el archivo **'../_data/time.dat'** 
