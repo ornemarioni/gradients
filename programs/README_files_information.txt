@@ -97,15 +97,19 @@ DOCUMENTACION ILLUSTRIS: https://www.tng-project.org/data/docs/specifications/
         - **'../simulations/snapshot_output.txt'** --> tiene la salida del guardado de archivos
     > Grafico uno de los halos para ver como quedo.
     
-14 - age_star_gas_particles.ipynb
+14 - age_star_particles.ipynb
     > Hago los plots de densidad estelar separando en edades de las estrellas 
     > Guardo los plots en **'../_imagenes/ages_stars/starages_sh_*.png'**
     > Hice un nuevo bineado (reemplace 8 por 7Gyr en realidad)
     > Guardo los plots en **'../_imagenes/ages_stars/new_bins/starages_sh_*.png'**
     > Veo que snapshots caen dentro de cada bin de edad
     > Saco los ID de las particulas que nacieron en cada bin de edades
-    > Guardo '../_data/ID_stars_formtime.dat' los ID de las part en cada bin de edad
-    > Guardo '../_data/num_stars_formtime.dat' los numeros de ctas particulas nacieron en ese bin de edad.
+    > Guardo '../_data/ID_partxagebin/ID_pxab_sh_*.dat' los ID de las part en cada bin de edad
+    > Guardo '../_data/ID_partxagebin/npxab_sh*.dat' el num de ctas particulas nacieron en ese bin de edad.
+    > Guardo '../_data/snap_sft/sft_snap_sh*.dat' el snapshot donde se formaron las part.
+    > Guardo masas y posiciones de las particulas en su snapshot de formacion
+        - '../_data/pos_part_age/sft_snap_sh_*.dat'
+        - '../_data/pos_part_age/output_data.dat'
 
 15 - time.ipynb
     > Guardo el archivo **'../_data/time.dat'** 
