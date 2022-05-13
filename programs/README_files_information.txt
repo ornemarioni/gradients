@@ -110,12 +110,20 @@ DOCUMENTACION ILLUSTRIS: https://www.tng-project.org/data/docs/specifications/
     > Guardo masas y posiciones de las particulas en su snapshot de formacion
         - '../_data/pos_part_age/sft_snap_sh_*.dat'
         - '../_data/pos_part_age/output_data.dat'
+    > Grafico las estrellas en su tiempo de formación
+        - '../_imagenes/ages_stars_ft/strages_ft_sh_*.png'
 
 15 - time.ipynb
     > Guardo el archivo **'../_data/time.dat'** 
         - #snap    a    z    time
         
-   - gas_particles.ipynb
+16 - age_gas_particles.ipynb
+    > Me fijo que snapshot es representativo de los bines de edad
+    > Elijo los snapshots 127, 103,84 y 64 para los bines 0, 4, 7, 10Gyr respectivamente
+    > Guardo las posiciones y masa de las part de gas en los dif snapshots
+        - '../_data/pos_gas_age/gas_pos_(<SNAP>)_sh_*.dat'
+    > Grafico las particulas de gas en los diferentes snapshots
+        - '../_imagenes/ages_gas/gas_ages_sh_*.png'
 
    - circularidad.ipynb
     > archivo viejo
