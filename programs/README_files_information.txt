@@ -55,6 +55,7 @@ DOCUMENTACION ILLUSTRIS: https://www.tng-project.org/data/docs/specifications/
 7 - metalicidad_perfiles.ipynb
     > Calculo los perfiles radiales de metalicidad en bines de edad
     > Guardo los archivos **'../_imagenes/met_perfil/met_subh_*.png'**
+    > Calculo los perfiles radiales de metalicidad del gas
 
 8 - z50_perfiles.ipynb
     > Calculo los perfiles de z50 (Half-mass scale height) para todos los halos
