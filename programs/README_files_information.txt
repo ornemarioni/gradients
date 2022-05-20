@@ -55,7 +55,16 @@ DOCUMENTACION ILLUSTRIS: https://www.tng-project.org/data/docs/specifications/
 7 - metalicidad_perfiles.ipynb
     > Calculo los perfiles radiales de metalicidad en bines de edad
     > Guardo los archivos **'../_imagenes/met_perfil/met_subh_*.png'**
-    > Calculo los perfiles radiales de metalicidad del gas
+    > Calculo los perfiles radiales de metalicidad del gas para todos los tiempos
+    > Calculo los perfiles radiales de z50 del gas para todos los tiempos
+    > Calculo los perfiles radiales de densidad superficial del gas para todos los tiempos
+    > Guardo:
+        - **'../_data/gas_metallicity/gas_met_prof_sh_*.dat'** perfiles de metalicidad (25 bines ordenados por snapshot)
+        - **'../_data/gas_z50/gas_z50_prof_sh_*.dat'** perfiles de z50 (25 bines ordenados por snapshot)
+        - **'../_data/gas_surfden/gas_surfden_prof_sh_*.dat'** perfiles de densidad sup (25 bines ordenados por snapshot)
+        - **'../_data/output_gas_met_z50_sd.txt'** output de salida del programa
+     > Hago los plots de perfiles de metalicidades para el gas:
+        - **'../_imagenes/met_perfil_gas/met_gas_sh_*.png'**
 
 8 - z50_perfiles.ipynb
     > Calculo los perfiles de z50 (Half-mass scale height) para todos los halos
@@ -66,12 +75,16 @@ DOCUMENTACION ILLUSTRIS: https://www.tng-project.org/data/docs/specifications/
     > Calculo los perfiles de z50 (Half-mass scale height) para todos los halos en bines de edad
       (entre 0 y 14Gyr)
     > Guardo los archivos **'../_imagenes/z50_perfil/all_ages/z50_subh_*.png'**
+    > Hago los plots del perfil radial para el gas:
+        - **'../_imagenes/z50_perfil_gas/z50_gas_sh_*.png'**
     
 9 - surface_density.ipynb
     > Calculo los perfiles radiales de densidad superficial (de masa) para todos los halos
     > Guardo el archivo **'../_imagenes/surf_density.png'**
     > Calculo los perfiles de densidad superficial en bines de masa
     > Guardo los archivos **'../_imagenes/surf_density/sd_subh_*.png'**
+    > Hago los perfiles de densidad superficial para el gas:
+        - **'../_imagenes/surf_density_gas_profile/sd_gas_sh_*.png'**
     
 10 - circular_velocity.ipynb
     > Calculo las curvas de veloc circular para los 8 halos mas masivos
@@ -105,14 +118,14 @@ DOCUMENTACION ILLUSTRIS: https://www.tng-project.org/data/docs/specifications/
     > Guardo los plots en **'../_imagenes/ages_stars/new_bins/starages_sh_*.png'**
     > Veo que snapshots caen dentro de cada bin de edad
     > Saco los ID de las particulas que nacieron en cada bin de edades
-    > Guardo '../_data/ID_partxagebin/ID_pxab_sh_*.dat' los ID de las part en cada bin de edad
-    > Guardo '../_data/ID_partxagebin/npxab_sh*.dat' el num de ctas particulas nacieron en ese bin de edad.
-    > Guardo '../_data/snap_sft/sft_snap_sh*.dat' el snapshot donde se formaron las part.
+    > Guardo **'../_data/ID_partxagebin/ID_pxab_sh_*.dat'** los ID de las part en cada bin de edad
+    > Guardo **'../_data/ID_partxagebin/npxab_sh*.dat'** el num de ctas particulas nacieron en ese bin de edad.
+    > Guardo **'../_data/snap_sft/sft_snap_sh*.dat'** el snapshot donde se formaron las part.
     > Guardo masas y posiciones de las particulas en su snapshot de formacion
-        - '../_data/pos_part_age/sft_snap_sh_*.dat'
-        - '../_data/pos_part_age/output_data.dat'
+        - **'../_data/pos_part_age/sft_snap_sh_*.dat'**
+        - **'../_data/pos_part_age/output_data.dat'**
     > Grafico las estrellas en su tiempo de formación
-        - '../_imagenes/ages_stars_ft/strages_ft_sh_*.png'
+        - **'../_imagenes/ages_stars_ft/strages_ft_sh_*.png'**
 
 15 - time.ipynb
     > Guardo el archivo **'../_data/time.dat'** 
@@ -122,9 +135,9 @@ DOCUMENTACION ILLUSTRIS: https://www.tng-project.org/data/docs/specifications/
     > Me fijo que snapshot es representativo de los bines de edad
     > Elijo los snapshots 127, 103,84 y 64 para los bines 0, 4, 7, 10Gyr respectivamente
     > Guardo las posiciones y masa de las part de gas en los dif snapshots
-        - '../_data/pos_gas_age/gas_pos_(<SNAP>)_sh_*.dat'
+        - **'../_data/pos_gas_age/gas_pos_(<SNAP>)_sh_*.dat'**
     > Grafico las particulas de gas en los diferentes snapshots
-        - '../_imagenes/ages_gas/gas_ages_sh_*.png'
+        - **'../_imagenes/ages_gas/gas_ages_sh_*.png'**
 
    - circularidad.ipynb
     > archivo viejo

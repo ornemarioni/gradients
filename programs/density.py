@@ -15,6 +15,10 @@ def surf_density(R,m,nbin):
         
         mask, = np.where((R < nodos[i+1]) & (R > nodos[i]))
         
+        if len(mask) == 0:
+            print('Me falta un bin! (SurfDen)')
+            continue
+        
         sigma[i] = np.sum(m[mask])/area
         
     return sigma, med
