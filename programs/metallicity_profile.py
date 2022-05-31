@@ -25,9 +25,11 @@ def met(R,z,FeH,nbin):
 #----------------------------------------------------------------------
 def met_esf(r,FeH,nbin):
     
-    nodos = np.linspace(0,r.max(),nbin+1)
+#     nodos = np.linspace(0,r.max(),nbin+1)
     
-    med = nodos[:-1] + np.diff(nodos)/2.
+#     med = nodos[:-1] + np.diff(nodos)/2.
+
+    med, nodos = bines2.rbin1(r, nbin)
     
     Fe_H = np.zeros(nbin)
     
@@ -40,5 +42,6 @@ def met_esf(r,FeH,nbin):
             continue
         
         Fe_H[i] = np.median(FeH[mask])
+        # Fe_H[i] = np.mean(FeH[mask])
         
     return med, Fe_H

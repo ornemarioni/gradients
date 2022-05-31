@@ -63,8 +63,17 @@ DOCUMENTACION ILLUSTRIS: https://www.tng-project.org/data/docs/specifications/
         - **'../_data/gas_z50/gas_z50_prof_sh_*.dat'** perfiles de z50 (25 bines ordenados por snapshot)
         - **'../_data/gas_surfden/gas_surfden_prof_sh_*.dat'** perfiles de densidad sup (25 bines ordenados por snapshot)
         - **'../_data/output_gas_met_z50_sd.txt'** output de salida del programa
-     > Hago los plots de perfiles de metalicidades para el gas:
+    > Hago los plots de perfiles de metalicidades para el gas:
         - **'../_imagenes/met_perfil_gas/met_gas_sh_*.png'**
+    > Hago el plot A1 de Demle et al 2022
+    > Miro la abundancia de metales:
+        - **'../_imagenes/metals/metals_sh_*.png'**
+    > Scatterplot age vs metallicity
+    > Calculo los perfiles de [O/H] y Ztotal:
+        - **'../_imagenes/met_perfil/OH_subh_*.png'**
+        - **'../_imagenes/met_perfil/Ztot_subh_*.png'**
+    > Calculo la relacion entre [0/H] y Ztot:
+        - **'../_imagenes/metals/metallicity_sh_*.png'**
 
 8 - z50_perfiles.ipynb
     > Calculo los perfiles de z50 (Half-mass scale height) para todos los halos

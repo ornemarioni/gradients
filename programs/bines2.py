@@ -23,6 +23,7 @@ def rbin1(x, nbin):
 
     for i in range(0, nbin):
         med[i] = np.median(x_sort[i*delta:(i+1)*delta])
+        # med[i] = np.mean(x_sort[i*delta:(i+1)*delta])
         nodos[i+1] = x_sort[(i+1)*delta]
 
     return med, nodos
