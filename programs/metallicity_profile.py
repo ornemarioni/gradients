@@ -12,7 +12,7 @@ def met(R,z,FeH,nbin):
     
     for i in range(nbin):
         
-        mask, = np.where((R < nodos[i+1]) & (R > nodos[i]) & (z>0))
+        mask, = np.where((R < nodos[i+1]) & (R > nodos[i])) #& (z>0))
         
         if len(mask)==0:
             print('Me falta un bin! (FeH)')

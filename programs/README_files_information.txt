@@ -74,6 +74,12 @@ DOCUMENTACION ILLUSTRIS: https://www.tng-project.org/data/docs/specifications/
         - **'../_imagenes/met_perfil/Ztot_subh_*.png'**
     > Calculo la relacion entre [0/H] y Ztot:
         - **'../_imagenes/metals/metallicity_sh_*.png'**
+    > Calculo los perfiles radiales de Ztot/Zsun del gas para todos los tiempos
+    > Guardo:
+        - **'../_data/gas_Ztot/gas_Ztot_prof_sh_*.dat'** perfiles de metalicidad total (25 bines ordenados por snapshot)
+        - **'../_data/output_gas_Ztot.txt'** output de salida del programa
+    > Hago los perfiles de Ztot para el gas:
+        - **'../_imagenes/Ztot_perfil_gas/Ztot_gas_sh_*.png'**
 
 8 - z50_perfiles.ipynb
     > Calculo los perfiles de z50 (Half-mass scale height) para todos los halos
