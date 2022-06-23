@@ -41,3 +41,27 @@ def vol_density(r, m, nbin):
         rho[i] = np.sum(m[mask])/vol
         
     return rho, med
+
+#----------------------------------------------------------------------
+# Densidad superficial de masa log bin
+#----------------------------------------------------------------------
+def surf_density_log(R,m,nbin):
+    
+    nodos = np.logspace(np.log10(0.2),np.log10(R.max()),nbin+1)
+    
+    med = nodos[:-1] + np.diff(nodos)/2.
+    
+    sigma = np.zeros(nbin)+1e-10
+    
+    for i in range(nbin):
+        area = np.pi*(nodos[i+1]**2 - nodos[i]**2)
+        
+        mask, = np.where((R < nodos[i+1]) & (R > nodos[i]))
+        
+        if len(mask) == 0:
+            # print('Me falta un bin! (SurfDen)')
+            continue
+        
+        sigma[i] = np.sum(m[mask])/area
+        
+    return sigma, med

@@ -53,13 +53,13 @@ DOCUMENTACION ILLUSTRIS: https://www.tng-project.org/data/docs/specifications/
     > Se puede hacer con los otros halos, esta hecho solo con el primero
     
 7 - metalicidad_perfiles.ipynb
-    > Calculo los perfiles radiales de metalicidad en bines de edad
+    > Calculo los perfiles radiales de metalicidad (Fe/H) en bines de edad
     > Guardo los archivos **'../_imagenes/met_perfil/met_subh_*.png'**
     > Calculo los perfiles radiales de metalicidad del gas para todos los tiempos
     > Calculo los perfiles radiales de z50 del gas para todos los tiempos
     > Calculo los perfiles radiales de densidad superficial del gas para todos los tiempos
     > Guardo:
-        - **'../_data/gas_metallicity/gas_met_prof_sh_*.dat'** perfiles de metalicidad (25 bines ordenados por snapshot)
+        - **'../_data/gas_metallicity/gas_met_prof_sh_*.dat'** perfiles de Fe/H (25 bines ordenados por snapshot)
         - **'../_data/gas_z50/gas_z50_prof_sh_*.dat'** perfiles de z50 (25 bines ordenados por snapshot)
         - **'../_data/gas_surfden/gas_surfden_prof_sh_*.dat'** perfiles de densidad sup (25 bines ordenados por snapshot)
         - **'../_data/output_gas_met_z50_sd.txt'** output de salida del programa
@@ -80,6 +80,27 @@ DOCUMENTACION ILLUSTRIS: https://www.tng-project.org/data/docs/specifications/
         - **'../_data/output_gas_Ztot.txt'** output de salida del programa
     > Hago los perfiles de Ztot para el gas:
         - **'../_imagenes/Ztot_perfil_gas/Ztot_gas_sh_*.png'**
+    > Calculo el Ztot para las estrellas con bines equiespaciados en el log.
+    > Agrego los puntos de Ztot = -0.1 y 0.2 (Hago los perfiles con cuadraditos)
+        - **'../_imagenes/Ztot_perfil/Ztot_points_sh_*.png'**
+        - **'../_imagenes/z50_perfil/z50_points_sh_*.png'**
+    > Hago los perfiles de Ztot para las estrellas pero en todo el rango de edad en bines log
+      (Esto es para verificar que los puntos efectivamente caian sobre algun perfil de edad)
+        - **'../_imagenes/Ztot_perfil/Ztot_points_sh_*_aa.png'** #para rango -0.1 y 0.2
+        - **'../_imagenes/Ztot_perfil/Ztot_points_sh_*_aa-0.3.png'** #para rango -0.3, 0.2
+    > Calculo la edad caracteristica de cada bin de metalicidad fija para las estrellas para z50
+        - **'../_data/charac_age/charac_age_-0.1_sh_*.dat'
+        - **'../_data/charac_age/charac_age_0.2_sh_*.dat'
+        - **'../_data/charac_age/charac_age_-0.3_sh_*.dat'
+    > Guardo los datos para los bines en los 3 rangos de metalicidad (-0.1,0.2,-0.3):
+        - **'../_data/gas_Ztot_points/gas_Ztot_points_*_sh_*.dat'**    
+    > Calculo los perfiles radiales de total met, z50 y densidad superficial del gas para todos los tiempos en bines log
+    > Guardo:
+        - **'../_data/gas_metallicity/gas_totalmet_log_prof_sh_*.dat'** perfiles de Fe/H (25 bines ordenados por snapshot)
+        - **'../_data/gas_z50/gas_z50__log_prof_sh_*.dat'** perfiles de z50 (25 bines ordenados por snapshot)
+        - **'../_data/gas_surfden/gas_surfden_log_prof_sh_*.dat'** perfiles de densidad sup (25 bines ordenados por snapshot)
+        - **'../_data/output_gas_met_z50_sd_log.txt'** output de salida del programa
+    
 
 8 - z50_perfiles.ipynb
     > Calculo los perfiles de z50 (Half-mass scale height) para todos los halos
@@ -92,6 +113,14 @@ DOCUMENTACION ILLUSTRIS: https://www.tng-project.org/data/docs/specifications/
     > Guardo los archivos **'../_imagenes/z50_perfil/all_ages/z50_subh_*.png'**
     > Hago los plots del perfil radial para el gas:
         - **'../_imagenes/z50_perfil_gas/z50_gas_sh_*.png'**
+    > Grafico los perfiles para el gas con bines en log
+        - **'../_imagenes/z50_perfil_gas/z50_log_prof_sh_*.png'**
+    > Grafico los perfiles para el gas con bines en log y los puntos en rango de metalicidad
+        - **'../_imagenes/z50_perfil_gas/z50_log_prof_sh_*_points1.png'** # con -0.1, 0.2
+        - **'../_imagenes/z50_perfil_gas/z50_log_prof_sh_*_points3.png'** # con -0.3, 0.2
+    > Grafico los valores de z50 a met fija para el gas y las estrellas
+        - **'../_imagenes/z50_logbin/z50_logbin_sh_*_-0.1.png'**
+        - **'../_imagenes/z50_logbin/z50_logbin_sh_*_-0.3.png'**
     
 9 - surface_density.ipynb
     > Calculo los perfiles radiales de densidad superficial (de masa) para todos los halos
