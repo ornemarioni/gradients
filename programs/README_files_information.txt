@@ -125,10 +125,14 @@ DOCUMENTACION ILLUSTRIS: https://www.tng-project.org/data/docs/specifications/
 9 - surface_density.ipynb
     > Calculo los perfiles radiales de densidad superficial (de masa) para todos los halos
     > Guardo el archivo **'../_imagenes/surf_density.png'**
-    > Calculo los perfiles de densidad superficial en bines de masa
+    > Calculo los perfiles de densidad superficial en bines de edad
     > Guardo los archivos **'../_imagenes/surf_density/sd_subh_*.png'**
+    > Hago los perfiles de den sup en bines de edad y log en R
+        - **'../_imagenes/surf_density/sd_subh_log_*.png'**
     > Hago los perfiles de densidad superficial para el gas:
         - **'../_imagenes/surf_density_gas_profile/sd_gas_sh_*.png'**
+    > Hago los perfiles de densidad para el gas con bines log
+        - **'../_imagenes/surf_density_gas_profile/sd_gas_log_sh_*.png'**
     
 10 - circular_velocity.ipynb
     > Calculo las curvas de veloc circular para los 8 halos mas masivos
