@@ -71,8 +71,10 @@ def HMSH_log_a(R,z,m,age,nbin):
     
     med = nodos[:-1] + np.diff(nodos)/2.
     
-    z50 = np.zeros(nbin)+1e-10
-    charac_age = np.zeros(nbin)+1e-10
+    z50 = np.ones(nbin)*np.nan
+    charac_age = np.ones(nbin)*np.nan
+    p25 = np.ones(nbin)*np.nan
+    p75 = np.ones(nbin)*np.nan
     
     for i in range(nbin):
         
@@ -96,5 +98,6 @@ def HMSH_log_a(R,z,m,age,nbin):
 
         z50[i] = zsort[m_mean][-1]
         charac_age[i] = np.median(age[mask])
+        p25[i],p75[i] = np.percentile(zsort,[25,75])
         
-    return med, z50, charac_age, nodos
+    return med, z50, charac_age, nodos, p25, p75

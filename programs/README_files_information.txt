@@ -100,6 +100,8 @@ DOCUMENTACION ILLUSTRIS: https://www.tng-project.org/data/docs/specifications/
         - **'../_data/gas_z50/gas_z50__log_prof_sh_*.dat'** perfiles de z50 (25 bines ordenados por snapshot)
         - **'../_data/gas_surfden/gas_surfden_log_prof_sh_*.dat'** perfiles de densidad sup (25 bines ordenados por snapshot)
         - **'../_data/output_gas_met_z50_sd_log.txt'** output de salida del programa
+    > Hago los perfiles de Ztot para el gas en bines log
+        - **'../_imagenes/Ztot_perfil_gas/Ztot_gas_sh_*_sq.png'**
     
 
 8 - z50_perfiles.ipynb
