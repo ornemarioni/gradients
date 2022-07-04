@@ -53,7 +53,7 @@ def met_log(r,FeH,nbin):
     
     med = nodos[:-1] + np.diff(nodos)/2.
     
-    Fe_H = np.zeros(nbin)-20
+    Fe_H = np.ones(nbin)*np.nan
     
     for i in range(nbin):
         
