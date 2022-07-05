@@ -65,9 +65,9 @@ def HMSH_log(R,z,m,nbin):
 
 #--------------------------------------------------------------------
 
-def HMSH_log_a(R,z,m,age,nbin):
+def HMSH_log_a(R,z,m,age,nbin,nodo_min=np.log10(0.2)):
     
-    nodos = np.logspace(np.log10(0.2),np.log10(R.max()),nbin+1)
+    nodos = np.logspace(nodo_min,np.log10(R.max()),nbin+1)
     
     med = nodos[:-1] + np.diff(nodos)/2.
     

@@ -123,6 +123,15 @@ DOCUMENTACION ILLUSTRIS: https://www.tng-project.org/data/docs/specifications/
     > Grafico los valores de z50 a met fija para el gas y las estrellas
         - **'../_imagenes/z50_logbin/z50_logbin_sh_*_-0.1.png'**
         - **'../_imagenes/z50_logbin/z50_logbin_sh_*_-0.3.png'**
+        - **'../_imagenes/z50_logbin/z50_logbin_sh_*.png'** --> tiene los 3 rangos
+        - **'../_imagenes/z50_logbin/z50_logbin_sh_*_2.png'** --> me quedo con -0.1, 0.2
+    > Calculo el z50 vs la metalicidad para radios fijos
+        - **'../_data/z50_vs_met/z50_met_rad*_sh_*.dat'**
+    > Calculo z50 vs metalicidad en radios fijos para el gas
+        - '../_data/gas_z50_vs_met/gas_z50met_rad*_sh_*.dat'**
+    > Grafico z50 vs met para radios fijos GAS+STR
+        - **'../_imagenes/z50_met/z50_met_sh_*.png'**
+        
     
 9 - surface_density.ipynb
     > Calculo los perfiles radiales de densidad superficial (de masa) para todos los halos
