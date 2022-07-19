@@ -47,22 +47,25 @@ def met_esf(r,FeH,nbin):
     return med, Fe_H
 
 #---------------------------------------------------------------------------
-def met_log(r,FeH,nbin):
+def met_log(r,FeH,nbin,nodo_min=np.log10(0.2)):
     
-    nodos = np.logspace(np.log10(0.2),np.log10(r.max()),nbin+1)
+    nodos = np.logspace(nodo_min,np.log10(r.max()),nbin+1)
     
     med = nodos[:-1] + np.diff(nodos)/2.
     
     Fe_H = np.ones(nbin)*np.nan
+    p25 = np.ones(nbin)*np.nan
+    p75 = np.ones(nbin)*np.nan
     
     for i in range(nbin):
         
         mask, = np.where((r < nodos[i+1]) & (r > nodos[i]))
         
-        if len(mask)==0:
+        if (len(mask)==0 or len(mask)==1):
             # print('Me falta un bin! (FeH)')
             continue
         
         Fe_H[i] = np.median(FeH[mask])
+        p25[i],p75[i] = np.percentile(FeH[mask],[25,75])
         
-    return med, Fe_H
+    return med, Fe_H, p25, p75

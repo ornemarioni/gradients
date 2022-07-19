@@ -31,13 +31,15 @@ def HMSH(R,z,m,nbin):
     return med, z50
 
 #----------------------------------------------------------------------
-def HMSH_log(R,z,m,nbin):
+def HMSH_log(R,z,m,nbin,nodo_min=np.log10(0.2)):
     
-    nodos = np.logspace(np.log10(0.2),np.log10(R.max()),nbin+1)
+    nodos = np.logspace(nodo_min,np.log10(R.max()),nbin+1)
     
     med = nodos[:-1] + np.diff(nodos)/2.
     
-    z50 = np.zeros(nbin)+1e-10
+    z50 = np.ones(nbin)*np.nan
+    p25 = np.ones(nbin)*np.nan
+    p75 = np.ones(nbin)*np.nan
     
     for i in range(nbin):
         
@@ -60,8 +62,9 @@ def HMSH_log(R,z,m,nbin):
             continue
 
         z50[i] = zsort[m_mean][-1]
+        p25[i],p75[i] = np.percentile(zsort,[25,75])
         
-    return med, z50
+    return med, z50, nodos, p25, p75
 
 #--------------------------------------------------------------------
 

@@ -180,7 +180,7 @@ DOCUMENTACION ILLUSTRIS: https://www.tng-project.org/data/docs/specifications/
     > Guardo **'../_data/ID_partxagebin/ID_pxab_sh_*.dat'** los ID de las part en cada bin de edad
     > Guardo **'../_data/ID_partxagebin/npxab_sh*.dat'** el num de ctas particulas nacieron en ese bin de edad.
     > Guardo **'../_data/snap_sft/sft_snap_sh*.dat'** el snapshot donde se formaron las part.
-    > Guardo masas y posiciones de las particulas en su snapshot de formacion
+    > Guardo masas, posiciones y metalicidades de las particulas en su snapshot de formacion
         - **'../_data/pos_part_age/sft_snap_sh_*.dat'**
         - **'../_data/pos_part_age/output_data.dat'**
     > Grafico las estrellas en su tiempo de formación
