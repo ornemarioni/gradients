@@ -45,13 +45,13 @@ def vol_density(r, m, nbin):
 #----------------------------------------------------------------------
 # Densidad superficial de masa log bin
 #----------------------------------------------------------------------
-def surf_density_log(R,m,nbin):
+def surf_density_log(R,m,nbin,nodo_min=np.log10(0.2)):
     
-    nodos = np.logspace(np.log10(0.2),np.log10(R.max()),nbin+1)
+    nodos = np.logspace(nodo_min,np.log10(R.max()),nbin+1)
     
     med = nodos[:-1] + np.diff(nodos)/2.
     
-    sigma = np.zeros(nbin)+1e-10
+    sigma = np.ones(nbin)*np.nan
     
     for i in range(nbin):
         area = np.pi*(nodos[i+1]**2 - nodos[i]**2)

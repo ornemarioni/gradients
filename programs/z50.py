@@ -56,12 +56,13 @@ def HMSH_log(R,z,m,nbin,nodo_min=np.log10(0.2)):
         
         mtot   = np.cumsum(msort)
         m_mean, = np.where(mtot < mtot[-1]/2.)
-        
+        # print(len(z[mask]))
         if (len(m_mean)==0 or len(m_mean)==1):
             # print('Me falta un bin! (z50)')
             continue
 
         z50[i] = zsort[m_mean][-1]
+     
         p25[i],p75[i] = np.percentile(zsort,[25,75])
         
     return med, z50, nodos, p25, p75

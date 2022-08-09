@@ -19,6 +19,7 @@ DOCUMENTACION ILLUSTRIS: https://www.tng-project.org/data/docs/specifications/
 2 - virial_mass.ipynb
     > Leo los archivos de los subhalos, saco masas, posiciones y radios.
     > Calculo masa y radio virial de los 8 halos mas masivos que no tienen particulas low/int-res. **Mvir_Rvir.dat**
+    NO LO USE PARA NADA!!!
     
 3 - read_HESTIA.ipynb:
 	> Vemos la info de los halos adentro de los archivos de Amiga *.AHF_halos
@@ -31,12 +32,14 @@ DOCUMENTACION ILLUSTRIS: https://www.tng-project.org/data/docs/specifications/
 	> We plot the 3 most massive galaxy with sphviewer.
     > Grafico las estrellas de los 15 halos.
     > Miro que hay dentro de cada archivo de subhalo guardado.
+    > Grafico la posicion de los subhalos.
 	
 4 - density_plots.ipynb:
 	> Plots of mass density in stars, gas and dark matter. (z=0)
     > Tengo los minimos y maximos de densidad para cada plot.
     > Guardo los plots en **'../_imagenes/mass_density/subhalo*.png'**
     > Hago el plot **'../_imagenes/ages_stars/subhalo_000.pdf'** para el boletin de la AAA.
+    > Veo la masa de las particulas
     
 5 - metallicity_gradients.ipynb:
     > Leo los archivos de los subhalos que guarde
@@ -162,6 +165,8 @@ DOCUMENTACION ILLUSTRIS: https://www.tng-project.org/data/docs/specifications/
 12 - abundance_matching.ipynb
     > Grafico la curva de abundance matching
     > Guardo la imagen: **'../_imagenes/Mvir_vs_Mgal.png'**
+    > Veo que R200vsM200 de una recta
+    > Veo que las masas del AHF sean similar a las calculadas dentro de Rvir
     > Me fijo cuanta es la proporcion de masa que aportan las particulas con SFT<0
     
 13 - merger_tree.ipynb
@@ -185,6 +190,8 @@ DOCUMENTACION ILLUSTRIS: https://www.tng-project.org/data/docs/specifications/
         - **'../_data/pos_part_age/output_data.dat'**
     > Grafico las estrellas en su tiempo de formación
         - **'../_imagenes/ages_stars_ft/strages_ft_sh_*.png'**
+    > Voy a juntar los 3 plots en 1, stars at t=0, stars at SF and gas at SF
+        - **''../_imagenes/ages_star_gas/stargasages_sh_*.png'**
 
 15 - time.ipynb
     > Guardo el archivo **'../_data/time.dat'** 
