@@ -34,7 +34,7 @@ def HMSH(R,z,m,nbin):
 def HMSH_log(R,z,m,nbin,nodo_min=np.log10(0.2)):
     
     if len(R)!=len(z) or len(R)!=len(m) or len(z)!=len(m):
-        raise ValueError('vector must have the same length')
+        raise ValueError('vectors must have the same length')
         
     nodos = np.logspace(nodo_min,np.log10(R.max()),nbin+1)
     
@@ -75,7 +75,7 @@ def HMSH_log(R,z,m,nbin,nodo_min=np.log10(0.2)):
 def HMSH_log_a(R,z,m,age,nbin,nodo_min=np.log10(0.2)):
     
     if len(R)!=len(z) or len(R)!=len(m) or len(z)!=len(m) or len(R)!=len(age) or len(z)!=len(age) or len(m)!=len(age):
-        raise ValueError('vector must have the same length')
+        raise ValueError('vectors must have the same length')
     
     nodos = np.logspace(nodo_min,np.log10(R.max()),nbin+1)
     
