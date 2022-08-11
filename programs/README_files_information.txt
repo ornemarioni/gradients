@@ -46,6 +46,10 @@ DOCUMENTACION ILLUSTRIS: https://www.tng-project.org/data/docs/specifications/
     > Veo que porcentage de partículas tengo con Formation Time (FT) < 0 (ver documentacion Illustris)
     > Veo cuantas particulas tienen metalicidades negativas.
     > Hago los plots de distribucion de edades y metalicidades **'../_imagenes/metallicity_ages/Rz_met_s*.png'**
+    > Hago los plots de distribucion de edades y metalicidades, ahora con Ztot
+        - **'../_imagenes/metallicity_ages/Ztot_ages_lin_s*.png'** --> sin normalizar
+        - **'../_imagenes/metallicity_ages/Ztot_ages_s*.png'** --> normalizado eje X a rgal
+        - **'../_imagenes/metallicity_ages/Ztot_ages_n_s*.png'** --> normalizado eje X e Y a rgal
     > Veo como se distribuyen radialmente las metalicidades en bines de edad
     > Hago histogramas de metalicidades y edades
     > Corroboro que los tiempos que calculo me den igual a los calculados con un paquete de astropy (a --> Gyr)
@@ -156,6 +160,8 @@ DOCUMENTACION ILLUSTRIS: https://www.tng-project.org/data/docs/specifications/
         - **'../_data/velocity/sh*_Vgas.dat'**
         - **'../_data/velocity/sh*_Vdrk.dat'**
     > Grafico las curvas y las guardo: **'../_imagenes/velocities/Vcirc_sh_*.png'**
+    > Grafico las curvas normalizadas a rgal
+    > Guardo: **'../_imagenes/velocities/Vcirc_sh_n_*.png'**
     > Verifico que se lean bien los archivos
 
 11 - SFR.ipynb

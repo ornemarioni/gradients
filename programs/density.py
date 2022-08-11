@@ -6,6 +6,9 @@ import bines2
 #----------------------------------------------------------------------
 def surf_density(R,m,nbin):
     
+    if len(R)!=len(m):
+        raise ValueError('vector must have the same length')
+    
     med, nodos = bines2.rbin1(R, nbin)
     
     sigma = np.zeros(nbin)
@@ -46,6 +49,9 @@ def vol_density(r, m, nbin):
 # Densidad superficial de masa log bin
 #----------------------------------------------------------------------
 def surf_density_log(R,m,nbin,nodo_min=np.log10(0.2)):
+    
+    if len(R)!=len(m):
+        raise ValueError('vector must have the same length')
     
     nodos = np.logspace(nodo_min,np.log10(R.max()),nbin+1)
     

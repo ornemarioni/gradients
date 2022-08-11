@@ -47,25 +47,28 @@ def met_esf(r,FeH,nbin):
     return med, Fe_H
 
 #---------------------------------------------------------------------------
-def met_log(r,FeH,nbin,nodo_min=np.log10(0.2)):
+def met_log(R,met,nbin,nodo_min=np.log10(0.2)):
     
-    nodos = np.logspace(nodo_min,np.log10(r.max()),nbin+1)
+    if len(R)!=len(met):
+        raise ValueError('vector must have the same length')
+    
+    nodos = np.logspace(nodo_min,np.log10(R.max()),nbin+1)
     
     med = nodos[:-1] + np.diff(nodos)/2.
     
-    Fe_H = np.ones(nbin)*np.nan
+    metal = np.ones(nbin)*np.nan
     p25 = np.ones(nbin)*np.nan
     p75 = np.ones(nbin)*np.nan
     
     for i in range(nbin):
         
-        mask, = np.where((r < nodos[i+1]) & (r > nodos[i]))
+        mask, = np.where((R < nodos[i+1]) & (R > nodos[i]))
         
         if (len(mask)==0 or len(mask)==1):
             # print('Me falta un bin! (FeH)')
             continue
         
-        Fe_H[i] = np.median(FeH[mask])
-        p25[i],p75[i] = np.percentile(FeH[mask],[25,75])
+        metal[i] = np.median(met[mask])
+        p25[i],p75[i] = np.percentile(met[mask],[25,75])
         
-    return med, Fe_H, p25, p75
+    return med, metal, p25, p75
