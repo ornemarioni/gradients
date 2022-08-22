@@ -6,15 +6,18 @@ import bines2
 #----------------------------------------------------------------------
 def HMSH(R,z,m,nbin):
     
+    if len(R)!=len(z) or len(R)!=len(m) or len(z)!=len(m):
+        raise ValueError('vectors must have the same length')
+    
     med, nodos = bines2.rbin1(R, nbin)
     
-    z50 = np.zeros(nbin)+1e-10
+    z50 = np.ones(nbin)*np.nan
     
     for i in range(nbin):
         
         mask, = np.where((R < nodos[i+1]) & (R > nodos[i]) & (z>0))
         
-        if len(mask) == 0:
+        if (len(mask) == 0 or len(mask == 1)):
             # print('Me falta un bin! (z50)')
             continue
         
