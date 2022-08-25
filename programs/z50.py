@@ -15,15 +15,16 @@ def HMSH(R,z,m,nbin):
     
     for i in range(nbin):
         
-        mask, = np.where((R < nodos[i+1]) & (R > nodos[i]) & (z>0))
+        mask, = np.where((R < nodos[i+1]) & (R > nodos[i]))
         
         if (len(mask) == 0 or len(mask == 1)):
             # print('Me falta un bin! (z50)')
             continue
         
-        zorder = np.argsort(z[mask])
+        zabs = np.abs(z)
+        zorder = np.argsort(zabs[mask])
         
-        zsort = z[mask][zorder]
+        zsort = zabs[mask][zorder]
         msort = m[mask][zorder]
         
         mtot   = np.cumsum(msort)
@@ -49,15 +50,16 @@ def HMSH_log(R,z,m,nbin,nodo_min=np.log10(0.2)):
     
     for i in range(nbin):
         
-        mask, = np.where((R < nodos[i+1]) & (R > nodos[i]) & (z>0))
+        mask, = np.where((R < nodos[i+1]) & (R > nodos[i]))
         
         if (len(mask) == 0 or len(mask) == 1):
             # print('Me falta un bin! (z50)')
             continue
         
-        zorder = np.argsort(z[mask])
+        zabs = np.abs(z)
+        zorder = np.argsort(zabs[mask])
         
-        zsort = z[mask][zorder]
+        zsort = zabs[mask][zorder]
         msort = m[mask][zorder]
         
         mtot   = np.cumsum(msort)
@@ -96,10 +98,11 @@ def HMSH_log_a(R,z,m,age,nbin,nodo_min=np.log10(0.2)):
         if (len(mask) == 0 or len(mask) == 1):
             # print('Me falta un bin! (z50)')
             continue
+            
+        zabs = np.abs(z)
+        zorder = np.argsort(zabs[mask])
         
-        zorder = np.argsort(z[mask])
-        
-        zsort = z[mask][zorder]
+        zsort = zabs[mask][zorder]
         msort = m[mask][zorder]
         
         mtot   = np.cumsum(msort)
