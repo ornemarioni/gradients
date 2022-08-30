@@ -210,6 +210,9 @@ DOCUMENTACION ILLUSTRIS: https://www.tng-project.org/data/docs/specifications/
         - **'../_data/pos_gas_age/gas_pos_(<SNAP>)_sh_*.dat'**
     > Grafico las particulas de gas en los diferentes snapshots
         - **'../_imagenes/ages_gas/gas_ages_sh_*.png'**
+        
+17 - fuerza_isoterma.ipynb
+    > Calculo el potencial y la fuerza de una esfera isoterma sobre el plano z=0
 
    - circularidad.ipynb
     > archivo viejo
