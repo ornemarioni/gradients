@@ -198,6 +198,9 @@ DOCUMENTACION ILLUSTRIS: https://www.tng-project.org/data/docs/specifications/
         - **'../_imagenes/ages_stars_ft/strages_ft_sh_*.png'**
     > Voy a juntar los 3 plots en 1, stars at t=0, stars at SF and gas at SF
         - **''../_imagenes/ages_star_gas/stargasages_sh_*.png'**
+    > STARS at t=0 and t=birth position: lo grafico con el BirthPosition de la simu
+        - **'../_imagenes/ages_stars/new/starages.png'**
+        - **'../_imagenes/ages_stars/new/starages2.png'** (dentro de 50kpc)
 
 15 - time.ipynb
     > Guardo el archivo **'../_data/time.dat'** 
