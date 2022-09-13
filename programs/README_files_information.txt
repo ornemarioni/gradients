@@ -201,6 +201,10 @@ DOCUMENTACION ILLUSTRIS: https://www.tng-project.org/data/docs/specifications/
     > STARS at t=0 and t=birth position: lo grafico con el BirthPosition de la simu
         - **'../_imagenes/ages_stars/new/starages.png'**
         - **'../_imagenes/ages_stars/new/starages2.png'** (dentro de 50kpc)
+    > Guardo los pares de ID de t=0 y snap form
+        - **'../_data/pos_part_snapform/pos_part_snap_sh*.dat'**
+    > Grafico distancia de las particulas a t=0 vs birthpos
+        - **'../_imagenes/dist_form/dist_sh'*'.png'**
 
 15 - time.ipynb
     > Guardo el archivo **'../_data/time.dat'** 
@@ -216,6 +220,13 @@ DOCUMENTACION ILLUSTRIS: https://www.tng-project.org/data/docs/specifications/
         
 17 - fuerza_isoterma.ipynb
     > Calculo el potencial y la fuerza de una esfera isoterma sobre el plano z=0
+    
+18 - dist_at_tf.ipynb
+    > Distancia en birth pos vs snap form
+        - **'../_data/pos_part_test/pos_part_sh*.dat'**
+
+19 - dispertion_velocity.ipynb
+
 
    - circularidad.ipynb
     > archivo viejo

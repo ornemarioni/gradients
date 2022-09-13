@@ -53,7 +53,8 @@ def surf_density_log(R,m,nbin,nodo_min=np.log10(0.2)):
     if len(R)!=len(m):
         raise ValueError('vector must have the same length')
     
-    nodos = np.logspace(nodo_min,np.log10(R.max()),nbin+1)
+    nodo_max = np.log10(R[~np.isnan(R)].max())
+    nodos = np.logspace(nodo_min,nodo_max,nbin+1)
     
     med = nodos[:-1] + np.diff(nodos)/2.
     
