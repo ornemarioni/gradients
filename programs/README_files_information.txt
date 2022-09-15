@@ -203,6 +203,8 @@ DOCUMENTACION ILLUSTRIS: https://www.tng-project.org/data/docs/specifications/
         - **'../_imagenes/ages_stars/new/starages2.png'** (dentro de 50kpc)
     > Guardo los pares de ID de t=0 y snap form
         - **'../_data/pos_part_snapform/pos_part_snap_sh*.dat'**
+    > Grafico distancias a t=0 vs snapform
+        - 
     > Grafico distancia de las particulas a t=0 vs birthpos
         - **'../_imagenes/dist_form/dist_sh'*'.png'**
 
@@ -224,6 +226,10 @@ DOCUMENTACION ILLUSTRIS: https://www.tng-project.org/data/docs/specifications/
 18 - dist_at_tf.ipynb
     > Distancia en birth pos vs snap form
         - **'../_data/pos_part_test/pos_part_sh*.dat'**
+    > Distancia al tiempo de formacion vs tiempo (snapform)
+        - **'../_imagenes/dist_form/dist_time_sh*.png'**
+    > Calculo el Rvir, Mvir para todos los tiempos (en coord fisicas y masas solares)
+        - **'../_data/RvirMvir_time/RvirMvir_time_sh*.dat'**
 
 19 - dispertion_velocity.ipynb
 
