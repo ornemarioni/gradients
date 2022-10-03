@@ -117,3 +117,23 @@ def HMSH_log_a(R,z,m,age,nbin,nodo_min=np.log10(0.2)):
         p25[i],p75[i] = np.percentile(zsort,[25,75])
         
     return med, z50, charac_age, nodos, p25, p75
+#-------------------------------------------------------------------------------
+
+def z50v(z,m):
+    
+    if len(z)!=len(m):
+        raise ValueError('vectors must have the same length')
+    
+
+    zabs = np.abs(z)
+    zorder = np.argsort(zabs)
+
+    zsort = zabs[zorder]
+    msort = m[zorder]
+
+    mtot   = np.cumsum(msort)
+    m_mean, = np.where(mtot < mtot[-1]/2.)
+
+    z50 = zsort[m_mean][-1]
+        
+    return z50

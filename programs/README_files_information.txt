@@ -167,6 +167,8 @@ DOCUMENTACION ILLUSTRIS: https://www.tng-project.org/data/docs/specifications/
 11 - SFR.ipynb
     > Calculo la tasa de formacion estelar
     > Guardo el la imagen: **'../_imagenes/SFR.png'**
+    > Tasa de formacion estelar para un anillo alrededor de r50 +/- 1kpc y altura +/- 5kpc
+        - **'../_imagenes/SFR_cut.png'**
     
 12 - abundance_matching.ipynb
     > Grafico la curva de abundance matching
@@ -231,7 +233,18 @@ DOCUMENTACION ILLUSTRIS: https://www.tng-project.org/data/docs/specifications/
     > Calculo el Rvir, Mvir para todos los tiempos (en coord fisicas y masas solares)
         - **'../_data/RvirMvir_time/RvirMvir_time_sh*.dat'**
 
-19 - dispertion_velocity.ipynb
+19 - dispersion_velocity.ipynb
+    > Dispersion de veloc para estrellas a z=0 en bines de edad
+      Esta tomado dentro de un anillo alrededor de r50 +/- 1kpc y cortado en +/- 5kpc de z
+        - **'../_imagenes/veloc_disp/vd_age_s*.png'**
+        
+20 - mass_time.ipynb
+    > Calculo las masas para todos los tiempos
+        - **'../_data/masses/mass_time_sh*.dat'**
+        - **'../_imagenes/masses/mass_sh*.png'**
+    > Calculo las masas dentro de un anillo alrededor de r50+/-1kpc y altura +/- 5kpc
+        - **'../_data/masses/mass_time_cut_sh*.dat'**
+        - ** '../_imagenes/masses/mass_cut_sh*.png'**
 
 
    - circularidad.ipynb
