@@ -133,7 +133,10 @@ def z50v(z,m):
 
     mtot   = np.cumsum(msort)
     m_mean, = np.where(mtot < mtot[-1]/2.)
-
-    z50 = zsort[m_mean][-1]
+    
+    if len(m_mean)<2:
+        z50 = np.nan
+    else:
+        z50 = zsort[m_mean][-1]
         
     return z50

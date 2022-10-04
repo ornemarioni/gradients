@@ -169,6 +169,8 @@ DOCUMENTACION ILLUSTRIS: https://www.tng-project.org/data/docs/specifications/
     > Guardo el la imagen: **'../_imagenes/SFR.png'**
     > Tasa de formacion estelar para un anillo alrededor de r50 +/- 1kpc y altura +/- 5kpc
         - **'../_imagenes/SFR_cut.png'**
+    > ΣSFR para distintos radios
+        - ** '../_imagenes/SFR/SFR_sh*.png'**
     
 12 - abundance_matching.ipynb
     > Grafico la curva de abundance matching
