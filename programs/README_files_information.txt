@@ -138,8 +138,11 @@ DOCUMENTACION ILLUSTRIS: https://www.tng-project.org/data/docs/specifications/
         - '../_data/gas_z50_vs_met/gas_z50met_rad*_sh_*.dat'**
     > Grafico z50 vs met para radios fijos GAS+STR
         - **'../_imagenes/z50_met/z50_met_sh_*.png'**
-        
+    > Perfil z50 y metalicidad para edades fijas. Estrellas z=0 y z = tform
+        - **'../_imagenes/z50_met_prof/z50_met_prof_sh_*.png'**
+    > z50 y Metalicidad vs age para un anillo fijo (r50+/-1kpc y z+/-5kpc)
     
+        
 9 - surface_density.ipynb
     > Calculo los perfiles radiales de densidad superficial (de masa) para todos los halos
     > Guardo el archivo **'../_imagenes/surf_density.png'**
@@ -171,6 +174,11 @@ DOCUMENTACION ILLUSTRIS: https://www.tng-project.org/data/docs/specifications/
         - **'../_imagenes/SFR_cut.png'**
     > ΣSFR para distintos radios
         - ** '../_imagenes/SFR/SFR_sh*.png'**
+    > sigma_z vs ΣSFR para las estrellas a z=0 coloreada por edades
+        - **'../_imagenes/SFR/SFR_sigmaz_sh*.png'**
+    > sigma_z vs ΣSFR para las estrellas a z=0 para distintos radios
+        - **'../_imagenes/SFR/SFR_sigmaz_radius_sh*.png'**
+    
     
 12 - abundance_matching.ipynb
     > Grafico la curva de abundance matching
@@ -223,6 +231,10 @@ DOCUMENTACION ILLUSTRIS: https://www.tng-project.org/data/docs/specifications/
         - **'../_data/pos_gas_age/gas_pos_(<SNAP>)_sh_*.dat'**
     > Grafico las particulas de gas en los diferentes snapshots
         - **'../_imagenes/ages_gas/gas_ages_sh_*.png'**
+    > Guardo las posiciones y masa de las part de star forming gas en los dif snapshots
+        - **'../_data/pos_gas_age/gas_pos_sf_*_sh_*.dat'**
+    > Grafico el SFgas para distintos tiempos
+        - **'../_imagenes/ages_gas/sfgas_ages_sh_*.png'**
         
 17 - fuerza_isoterma.ipynb
     > Calculo el potencial y la fuerza de una esfera isoterma sobre el plano z=0
@@ -247,6 +259,15 @@ DOCUMENTACION ILLUSTRIS: https://www.tng-project.org/data/docs/specifications/
     > Calculo las masas dentro de un anillo alrededor de r50+/-1kpc y altura +/- 5kpc
         - **'../_data/masses/mass_time_cut_sh*.dat'**
         - ** '../_imagenes/masses/mass_cut_sh*.png'**
+
+21 - z50_vs_sigma.ipnb
+    > Calculo el z50 vs sigmaz para distintos radios
+        - **'../_imagenes/veloc_disp/vd_z50_sh*.png'**
+
+22 - Fig3.5_loewen.ipynb
+    > Fig 3.5 tesis Loewen: sigma_z, z50, metalicidad y SFR vs age
+        - **'../_data/Fig3.5/fig3.5_sh*.dat'**
+        - **'../_imagenes/Fig3.5/Fig3.5_sh*.png'**
 
 
    - circularidad.ipynb
