@@ -166,6 +166,8 @@ DOCUMENTACION ILLUSTRIS: https://www.tng-project.org/data/docs/specifications/
     > Grafico las curvas normalizadas a rgal
     > Guardo: **'../_imagenes/velocities/Vcirc_sh_n_*.png'**
     > Verifico que se lean bien los archivos
+    > Circular velocity over time
+        - **'../_imagenes/Vcirc_time_sh_*.png'**
 
 11 - SFR.ipynb
     > Calculo la tasa de formacion estelar
@@ -178,7 +180,10 @@ DOCUMENTACION ILLUSTRIS: https://www.tng-project.org/data/docs/specifications/
         - **'../_imagenes/SFR/SFR_sigmaz_sh*.png'**
     > sigma_z vs ΣSFR para las estrellas a z=0 para distintos radios
         - **'../_imagenes/SFR/SFR_sigmaz_radius_sh*.png'**
-    
+    > sigma_z vs SigmaSFR para las estrellas a z=0 coloreada por edades
+        - **'../_imagenes/SFR/SFR_sigmaz_sh*.png'**
+    > sigma_z vs SigmaSFR para las estrellas a z=0 para distintos radios
+        - **'../_imagenes/SFR/SFR_sigmaz_radius_sh*.png'**
     
 12 - abundance_matching.ipynb
     > Grafico la curva de abundance matching
@@ -259,15 +264,39 @@ DOCUMENTACION ILLUSTRIS: https://www.tng-project.org/data/docs/specifications/
     > Calculo las masas dentro de un anillo alrededor de r50+/-1kpc y altura +/- 5kpc
         - **'../_data/masses/mass_time_cut_sh*.dat'**
         - ** '../_imagenes/masses/mass_cut_sh*.png'**
+   
 
 21 - z50_vs_sigma.ipnb
     > Calculo el z50 vs sigmaz para distintos radios
         - **'../_imagenes/veloc_disp/vd_z50_sh*.png'**
+    > Los comparo con los modelos de gravedad NSG,SG and COMB
 
 22 - Fig3.5_loewen.ipynb
     > Fig 3.5 tesis Loewen: sigma_z, z50, metalicidad y SFR vs age
         - **'../_data/Fig3.5/fig3.5_sh*.dat'**
+    > Guardo los datos para el SFgas en distintos tiempos (tiempos de snapshots)
+        - **'../_data/Fig3.5/fig3.5_snap_sh*.dat'**
+    > Grafico estrellas a t=0 con young stars y sfgas.
         - **'../_imagenes/Fig3.5/Fig3.5_sh*.png'**
+    > Guardo el r50 para las galaxias
+        - **'../_data/r50.dat'**
+    > Guardo la densidad superficial de las estrellas para los distintos snapshots
+        - **'../_data/Fig3.5/fig3.5_starsall_sh*.dat'**
+        
+23 - Fig3.9_loewen.ipynb
+    > Grafico la fig 3.9 loewen: Sigma_gas, Sigma_baryon vs Sigma_SFR
+        - **'../_imagenes/SFR/SFR_sigmaz_gas_sh*.png'**
+        
+24 - Fig3.10_loewen.ipynb
+    > \sigma_z, z_50, metalicidad y SFR vs age para distintos radios 
+    > Estrellas a z=0:
+        - **'../_data/Fig3.10/fig3.10_sh*_r*.dat'**
+    > Gas y young stars:
+        - **'../_data/Fig3.10/fig3.10_snap_sh*_r*.dat'**
+    > Grafico la figura 3.10
+        - **../_imagenes/Fig3.10/Fig3.10_rad_sh*.png'**
+    > Grafico Fig3.11 Loewen
+        - **'../_imagenes/Fig3.11/Fig3.11_rad_sh*.png'**
 
 
    - circularidad.ipynb
