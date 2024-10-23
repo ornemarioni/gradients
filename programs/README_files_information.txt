@@ -264,8 +264,7 @@ DOCUMENTACION ILLUSTRIS: https://www.tng-project.org/data/docs/specifications/
     > Calculo las masas dentro de un anillo alrededor de r50+/-1kpc y altura +/- 5kpc
         - **'../_data/masses/mass_time_cut_sh*.dat'**
         - ** '../_imagenes/masses/mass_cut_sh*.png'**
-   
-
+        
 21 - z50_vs_sigma.ipnb
     > Calculo el z50 vs sigmaz para distintos radios
         - **'../_imagenes/veloc_disp/vd_z50_sh*.png'**
