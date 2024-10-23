@@ -10,9 +10,9 @@ def rbin1(x, nbin):
 
 #     print(n)
     if np.mod(n, nbin) == 0:
-        delta = np.int(n / nbin) - 1
+        delta = int(n / nbin) - 1
     else:
-        delta = np.int(n / nbin)
+        delta = int(n / nbin)
 
 #     print(delta)
 

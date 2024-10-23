@@ -297,6 +297,15 @@ DOCUMENTACION ILLUSTRIS: https://www.tng-project.org/data/docs/specifications/
     > Grafico Fig3.11 Loewen
         - **'../_imagenes/Fig3.11/Fig3.11_rad_sh*.png'**
 
+25 - surface_density_slope.ipynb
+    > Calculo las pendientes de los perfiles de densidad superficial para distintas edades. (bines equalnumber en la densidad)
+        - **'../_data/densup_profile/slope_perfil_densup_sh_*.dat'**
+    > Calculo las pendientes de los perfiles de densidad superficial para distintas edades. (bines log radial en la densidad)
+        - *'../_data/densup_profile/slope_perfil_densup_sh_*_logbin.dat'**
+
+
+
+
 
    - circularidad.ipynb
     > archivo viejo
