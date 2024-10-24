@@ -302,6 +302,12 @@ DOCUMENTACION ILLUSTRIS: https://www.tng-project.org/data/docs/specifications/
         - **'../_data/densup_profile/slope_perfil_densup_sh_*.dat'**
     > Calculo las pendientes de los perfiles de densidad superficial para distintas edades. (bines log radial en la densidad)
         - *'../_data/densup_profile/slope_perfil_densup_sh_*_logbin.dat'**
+    > Calculo las pendientes de los perfiles de densidad superficial para distintas edades. (bines log radial en la densidad) En el radio r50
+        - *'../_data/densup_profile/slope_r50_perfil_densup_sh_*_logbin.dat'**
+    > Calculo las pendientes de los perfiles de densidad superficial del gas para distintos tiempos. (bines log radial en la densidad)
+        - *'../_data/densup_profile/slope_perfil_densup_GAS_sh_*_logbin.dat'**
+    > Calculo las pendientes de los perfiles de densidad superficial del gas para distintos tiempos. (bines log radial en la densidad) En el r50
+        - *'../_data/densup_profile/slope_r50_perfil_densup_GAS_sh_*_logbin.dat'**
 
 
 
