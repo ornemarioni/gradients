@@ -11,7 +11,7 @@ def surf_density(R,m,nbin):
     
     med, nodos = bines2.rbin1(R, nbin)
     
-    sigma = np.zeros(nbin)
+    sigma = np.ones(nbin)*np.nan
     
     for i in range(nbin):
         area = np.pi*(nodos[i+1]**2 - nodos[i]**2)
@@ -19,7 +19,7 @@ def surf_density(R,m,nbin):
         mask, = np.where((R < nodos[i+1]) & (R > nodos[i]))
         
         if len(mask) == 0:
-            print('Me falta un bin! (SurfDen)')
+            #print('Me falta un bin! (SurfDen)')
             continue
         
         sigma[i] = np.sum(m[mask])/area
