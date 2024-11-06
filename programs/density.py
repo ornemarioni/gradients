@@ -22,7 +22,7 @@ def surf_density(R,m,nbin):
             #print('Me falta un bin! (SurfDen)')
             continue
         
-        sigma[i] = np.sum(m[mask])/area
+        sigma[i] = np.nansum(m[mask])/area
         
     return sigma, med
         
@@ -41,7 +41,7 @@ def vol_density(r, m, nbin):
         
         mask, = np.where((r < nodos[i+1]) & (r > nodos[i]))
         
-        rho[i] = np.sum(m[mask])/vol
+        rho[i] = np.nansum(m[mask])/vol
         
     return rho, med
 
@@ -69,6 +69,6 @@ def surf_density_log(R,m,nbin,nodo_min=np.log10(0.2)):
             # print('Me falta un bin! (SurfDen)')
             continue
         
-        sigma[i] = np.sum(m[mask])/area
+        sigma[i] = np.nansum(m[mask])/area
         
     return sigma, med
