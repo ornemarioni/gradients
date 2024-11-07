@@ -2,13 +2,13 @@ import numpy as np
 import bines2
 
 #----------------------------------------------------------------------
-# Half-mass scale height
+# Metalicities profiles
 #----------------------------------------------------------------------
 def met(R,FeH,nbin):
     
     med, nodos = bines2.rbin1(R, nbin)
     
-    Fe_H = np.zeros(nbin)-20
+    Fe_H = np.ones(nbin)*np.nan
     
     for i in range(nbin):
         
@@ -31,7 +31,7 @@ def met_esf(r,FeH,nbin):
 
     med, nodos = bines2.rbin1(r, nbin)
     
-    Fe_H = np.zeros(nbin)-20
+    Fe_H = np.ones(nbin)*np.nan
     
     for i in range(nbin):
         
@@ -64,7 +64,7 @@ def met_log(R,met,nbin,nodo_min=np.log10(0.2)):
         
         mask, = np.where((R < nodos[i+1]) & (R > nodos[i]))
         
-        if (len(mask)==0 or len(mask)==1):
+        if len(mask)<2:
             # print('Me falta un bin! (FeH)')
             continue
         

@@ -311,6 +311,16 @@ DOCUMENTACION ILLUSTRIS: https://www.tng-project.org/data/docs/specifications/
     > Guardo los r50 para todos los tiempos de todas las galaxias.
         - **'../_data/r50_time/r50_sh*.dat'**
 
+26 - age_met_profiles.ipynb
+    > Calculo los perfiles de edad y metalicidad en bines cilindricos.
+        - **'../_data/met_profile/met_eqn_prof_sh*.dat'** metalicidad bines equal number
+        - **'../_data/met_profile/met_log_prof_sh*.dat'** metalicidad bines log
+        - **'../_data/age_profile/age_eqn_prof_sh*.dat'** edad bines equal number
+        - **'../_data/age_profile/age_log_prof_sh*.dat'** edad bines log
+    
+
+
+
 
 
 
