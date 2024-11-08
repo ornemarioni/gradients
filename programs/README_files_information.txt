@@ -170,10 +170,12 @@ DOCUMENTACION ILLUSTRIS: https://www.tng-project.org/data/docs/specifications/
         - **'../_imagenes/Vcirc_time_sh_*.png'**
 
 11 - SFR.ipynb
-    > Calculo la tasa de formacion estelar
+    > Calculo la tasa de formacion estelar para toda la galaxia
     > Guardo el la imagen: **'../_imagenes/SFR.png'**
     > Tasa de formacion estelar para un anillo alrededor de r50 +/- 1kpc y altura +/- 5kpc
         - **'../_imagenes/SFR_cut.png'**
+    > Perfiles de SFR
+        - **
     > ΣSFR para distintos radios
         - ** '../_imagenes/SFR/SFR_sh*.png'**
     > sigma_z vs ΣSFR para las estrellas a z=0 coloreada por edades
