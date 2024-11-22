@@ -174,8 +174,11 @@ DOCUMENTACION ILLUSTRIS: https://www.tng-project.org/data/docs/specifications/
     > Guardo el la imagen: **'../_imagenes/SFR.png'**
     > Tasa de formacion estelar para un anillo alrededor de r50 +/- 1kpc y altura +/- 5kpc
         - **'../_imagenes/SFR_cut.png'**
-    > Perfiles de SFR
-        - **
+    > Perfiles de SFR y ΣSFR en bines equal number y bines log
+        - **'../_data/SFR_profile/SFR_eqn_prof_sh*.dat'**
+        - **'../_data/SFR_profile/SFR_log_prof_sh*.dat'**
+        - **'../_data/SFR_profile/DSFR_eqn_prof_sh*.dat'**
+        - **'../_data/SFR_profile/DSFR_log_prof_sh*.dat'**
     > ΣSFR para distintos radios
         - ** '../_imagenes/SFR/SFR_sh*.png'**
     > sigma_z vs ΣSFR para las estrellas a z=0 coloreada por edades

@@ -110,8 +110,6 @@ def cumProfile_log(R, x_in, nbin, nodo_min=np.log10(0.2)):
     med = nodos[:-1] + np.diff(nodos)/2.
     
     x_out = np.ones(nbin)*np.nan
-    p25   = np.ones(nbin)*np.nan
-    p75   = np.ones(nbin)*np.nan
     
     for i in range(nbin):
         
