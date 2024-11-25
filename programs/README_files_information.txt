@@ -324,6 +324,10 @@ DOCUMENTACION ILLUSTRIS: https://www.tng-project.org/data/docs/specifications/
         - **'../_data/age_profile/age_log_prof_sh*.dat'** edad bines log
     
 
+27 - slope_met_and_z50_profiles_vs_age.ipynb
+    > Calculo las pendientes de los perfiles de metalicidad y z50 en para distintas edades.
+        - **'../_data/met_z50_slope_prof/slope_met_perfil_sh_*_logbin.dat'
+        - **'../_data/met_z50_slope_prof/slope_z50_perfil_sh_*_logbin.dat'
 
 
 
