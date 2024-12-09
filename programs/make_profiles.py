@@ -70,7 +70,7 @@ def profile_log(R, x_in, nbin, nodo_min=np.log10(0.2)):
             # print('Me falta un bin!')
             continue
         
-        x_out[i]      = np.median(x_in[mask])
+        x_out[i]      = np.nanmedian(x_in[mask])
         p25[i],p75[i] = np.percentile(x_in[mask],[25,75])
         
     return med, x_out, p25, p75
