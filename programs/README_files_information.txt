@@ -33,6 +33,7 @@ DOCUMENTACION ILLUSTRIS: https://www.tng-project.org/data/docs/specifications/
     > Grafico las estrellas de los 15 halos.
     > Miro que hay dentro de cada archivo de subhalo guardado.
     > Grafico la posicion de los subhalos.
+        - **'../_imagenes/subhalos_centrales.png'**
 	
 4 - density_plots.ipynb:
 	> Plots of mass density in stars, gas and dark matter. (z=0)
@@ -329,6 +330,8 @@ DOCUMENTACION ILLUSTRIS: https://www.tng-project.org/data/docs/specifications/
         - **'../_data/met_z50_slope_prof/slope_met_perfil_sh_*_logbin.dat'
         - **'../_data/met_z50_slope_prof/slope_z50_perfil_sh_*_logbin.dat'
 
+28 - 6in1_profiles.ipynb
+    > Hago la Fig.6 de Navarro_etal2018
 
 
 
