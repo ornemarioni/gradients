@@ -38,9 +38,11 @@ DOCUMENTACION ILLUSTRIS: https://www.tng-project.org/data/docs/specifications/
 4 - density_plots.ipynb:
 	> Plots of mass density in stars, gas and dark matter. (z=0)
     > Tengo los minimos y maximos de densidad para cada plot.
-    > Guardo los plots en **'../_imagenes/mass_density/subhalo*.png'**
+    > Guardo los plots en **'../_imagenes/mass_density/snap_127/subhalo*.png'**
     > Hago el plot **'../_imagenes/ages_stars/subhalo_000.pdf'** para el boletin de la AAA.
     > Veo la masa de las particulas
+    > Vistas XY para las 12 galaxias a z=0
+        - Guardo plot **'../_imagenes/halos_XY_4x3.png'**
     
 5 - metallicity_gradients.ipynb:
     > Leo los archivos de los subhalos que guarde
@@ -142,6 +144,15 @@ DOCUMENTACION ILLUSTRIS: https://www.tng-project.org/data/docs/specifications/
     > Perfil z50 y metalicidad para edades fijas. Estrellas z=0 y z = tform
         - **'../_imagenes/z50_met_prof/z50_met_prof_sh_*.png'**
     > z50 y Metalicidad vs age para un anillo fijo (r50+/-1kpc y z+/-5kpc)
+    > Calculo el z50 vs la metalicidad para radios fracciones de rgal
+        - Guardo: ** '../_data/z50_vs_met_new/z50_met_radfrac*_sh_*.dat'**
+    > z50 vs metalicidad en para radios fracciones de rgal para el gas
+        - Guardo: ** '../_data/gas_z50_vs_met_new/gas_z50met_radfrac*_sh_*.dat'
+    > Grafico z50 vs met para radios frac de rgal GAS+STR
+        - Guardo: '../_imagenes/z50_met_new/z50_met_sh_*.png'
+    > Diferencia de los perfiles z50 y metalicidad para edades fijas. Estrellas z=0 y z = tform
+        - Guardo **'../_imagenes/z50_met_prof/dispersions_all_galaxies.png'**
+    
     
         
 9 - surface_density.ipynb
@@ -270,6 +281,8 @@ DOCUMENTACION ILLUSTRIS: https://www.tng-project.org/data/docs/specifications/
     > Calculo las masas dentro de un anillo alrededor de r50+/-1kpc y altura +/- 5kpc
         - **'../_data/masses/mass_time_cut_sh*.dat'**
         - ** '../_imagenes/masses/mass_cut_sh*.png'**
+    > Guardo las evolucion de las masas:
+        - **'../_imagenes/masses/mass_all_components.png'**
         
 21 - z50_vs_sigma.ipnb
     > Calculo el z50 vs sigmaz para distintos radios
@@ -332,6 +345,14 @@ DOCUMENTACION ILLUSTRIS: https://www.tng-project.org/data/docs/specifications/
 
 28 - 6in1_profiles.ipynb
     > Hago la Fig.6 de Navarro_etal2018
+
+29 - z50_r50_krot_vs_Mgal.ipynb
+    > Calculo el z50(r50) y krot.
+    > Guardo el archivo: ** '../_data/z50_r50_krot_vs_Mgal.dat' **
+    > Grafico:
+        - ** '../_imagenes/r50_vs_Mgal.png' **
+        - ** '../_imagenes/z50_vs_Mgal.png' **
+        - ** '../_imagenes/krot_vs_Mgal.png' ** 
 
 
 
