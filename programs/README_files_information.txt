@@ -39,6 +39,7 @@ DOCUMENTACION ILLUSTRIS: https://www.tng-project.org/data/docs/specifications/
 	> Plots of mass density in stars, gas and dark matter. (z=0)
     > Tengo los minimos y maximos de densidad para cada plot.
     > Guardo los plots en **'../_imagenes/mass_density/snap_127/subhalo*.png'**
+        - Cambie vmin, vmax guarde: **'../_imagenes/mass_density/snap_127_new/subhalo*.png'**
     > Hago el plot **'../_imagenes/ages_stars/subhalo_000.pdf'** para el boletin de la AAA.
     > Veo la masa de las particulas
     > Vistas XY para las 12 galaxias a z=0
@@ -347,12 +348,18 @@ DOCUMENTACION ILLUSTRIS: https://www.tng-project.org/data/docs/specifications/
     > Hago la Fig.6 de Navarro_etal2018
 
 29 - z50_r50_krot_vs_Mgal.ipynb
-    > Calculo el z50(r50) y krot.
+    > Calculo el z50(r50), krot, r50, rgal .
     > Guardo el archivo: ** '../_data/z50_r50_krot_vs_Mgal.dat' **
     > Grafico:
         - ** '../_imagenes/r50_vs_Mgal.png' **
         - ** '../_imagenes/z50_vs_Mgal.png' **
-        - ** '../_imagenes/krot_vs_Mgal.png' ** 
+        - ** '../_imagenes/krot_vs_Mgal.png' **
+        - ** '../_imagenes/rgal_vs_Mgal.png' ** 
+
+30 - density_vmin_vmax.ipynb
+    > Calculo los vmim y vmax de los graficos de densidad.
+    > Guardo:
+        - **'../_data/density_vmin_vmax.dat'**
 
 
 
