@@ -42,8 +42,10 @@ DOCUMENTACION ILLUSTRIS: https://www.tng-project.org/data/docs/specifications/
         - Cambie vmin, vmax guarde: **'../_imagenes/mass_density/snap_127_new/subhalo*.png'**
     > Hago el plot **'../_imagenes/ages_stars/subhalo_000.pdf'** para el boletin de la AAA.
     > Veo la masa de las particulas
-    > Vistas XY para las 12 galaxias a z=0
+    > Vistas XY para las 12 galaxias a z=0 (Estrellas)
         - Guardo plot **'../_imagenes/halos_XY_4x3.png'**
+    > Vistas XY y XZ para las 12 galaxias a z=0 (Estrellas)
+        - Guardo plot **'../_imagenes/stars_XY_XZ_8x3.png'**
     
 5 - metallicity_gradients.ipynb:
     > Leo los archivos de los subhalos que guarde
@@ -360,6 +362,8 @@ DOCUMENTACION ILLUSTRIS: https://www.tng-project.org/data/docs/specifications/
     > Calculo los vmim y vmax de los graficos de densidad.
     > Guardo:
         - **'../_data/density_vmin_vmax.dat'**
+    > Guardo los datos de los halos: 'Id  Mvir Mgal r_vir r_gal r50'
+        - **'../_data/halo_data.dat'**
 
 
 
